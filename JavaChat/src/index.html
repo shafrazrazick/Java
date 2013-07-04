@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFFFFF;
+}
+body {
+	background-color: #999999;
+}
+-->
+</style></head>
+
+<body>
+<div>
+  <p>CocodriloChat: Idea del Proyecto</p>
+  <p>La motivaci&oacute;n para la realizaci&oacute;n de este proyecto es aumentar nuestros conocimientos en el manejo del lenguaje de programaci&oacute;n, adem&aacute;s de implementar el manejo de nuevos m&eacute;todos y clases que no se han dado en el contenido de la carrera tales como Los Sockets e Hilos dentro de JAVA.</p>
+  <p><br />
+    La implementaci&oacute;n del programa servidor sigue las siguientes ideas:</p>
+</div>
+<ol>
+  <li>Se inicia el servidor</li>
+  <li>El servidor se mantiene escuchando cualquier petici&oacute;n de un cliente para conectarse.</li>
+  <li>El servidor acepta al cliente.</li>
+  <li>El servidor lanza un hilo de comunicaci&oacute;n con el cliente.</li>
+  <li>Por el hilo se env&iacute;an y reciben mensajes a trav&eacute;s del servidor entre todos los clientes.</li>
+  <li>Si el cliente cierra la comunicaci&oacute;n el hilo se rompe y se corta la comunicaci&oacute;n con ese cliente.</li>
+</ol>
+<div>La implementaci&oacute;n del programa cliente sigue las siguientes ideas:</div>
+<ol>
+  <li>Se inicia el cliente</li>
+  <li>El cliente lanza una petici&oacute;n al servidor para conectarse</li>
+  <li>El servidor asigna un hilo al cliente al ser aceptado.</li>
+  <li>El cliente env&iacute;a y recibe mensajes por el hilo hacia todos o hacia   algun usuario espec&iacute;fico, usando al servidor como puente para las   comunicaciones.</li>
+</ol>
+<div>Para esto se ha empleado objetos de la   clase ServerSocket y Socket para el servidor y cliente respectivamente   que permiten la conexion entre cliente y servidor mientras que los Hilos   sirven para hacer que el servidor se mantenga escuchando y no   interrumpa su proceso mientras los clientes se comunican a traves de   mensajes.A continuacion unas definiciones:</div>
+<div>
+  <p><strong>Sockets</strong>: Los   sockets no son m&aacute;s que puntos o mecanismos de comunicaci&oacute;n entre   procesos que permiten que un proceso hable ( emita o reciba informaci&oacute;n )   con otro proceso incluso estando estos procesos en distintas m&aacute;quinas.   Esta caracter&iacute;stica de interconectividad entre m&aacute;quinas hace que el   concepto de socket nos sirva de gran utilidad.</p>
+</div>
+<div>
+  <p>&nbsp;</p>
+  <p><strong>Hilos:</strong>   Un hilo es un flujo de ejecuci&oacute;n de c&oacute;digo, y mediante hilos, podemos   hacer que nuestros programas aparentemente realicen varias tareas al   mismo tiempo.Por ejemplo, un c&oacute;digo podr&iacute;a interaccionar con el usuario   mientras realiza tareas de segundo plano de gran consumo de tiempo.Los   hilos separados realmente no se ejecutan al mismo tiempo(a menos que se   tenga una maquina multiprocesador); en realidad cada hilo obtiene   secuencias de tiempo del mismo procesador</p>
+</div>
+<p>Contacto:</p>
+<p>Jos&eacute; Oberto | Joseoberto2@gmail.com </p>
+<p>Isaac Urdaneta  | Idurdaneta@gmail.com</p>
+</body>
+</html>
